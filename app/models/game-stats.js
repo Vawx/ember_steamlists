@@ -5,5 +5,6 @@ export default DS.Model.extend({
 	gameID: DS.attr( ),
 	gameRating: DS.attr( ),
 	gameDeveloper: DS.attr( ),
-	recentNews: DS.hasMany('news', {async: true}),  
+	recentNews: DS.hasMany('game-news', {async: true}),
 });
+  
