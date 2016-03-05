@@ -19,5 +19,5 @@ export default DS.Model.extend({
 	gameRequirements: DS.attr( ),
 	gameUrl: DS.attr( ),
 	recentNews: DS.hasMany('game-news', {async: true}),
-	achievements: DS.hasMany('game-achievements', {async: true}),
+	achievements: DS.hasMany('game-achievement', {async: true}),
 });

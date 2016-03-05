@@ -1,7 +1,5 @@
 {{outlet}}
 
-<span class="btn btn-primary" {{action 'testJSON'}}>Test</span>
-
 {{#each model as |game|}}
-  {{game-tile game=game}}
+  {{game-tile-small game=game}}
 {{/each}}
