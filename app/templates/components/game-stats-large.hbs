@@ -1,1 +1,36 @@
 {{yield}}
+
+<div class="col-xs-7 col-xs-offset-1">
+  {{{gameTitleInfo game.gameName getGameCost getDeveloper getRating game.gameUrl game.gameReleaseDate}}}
+  <div class="well">
+    <img src="{{game.gameHeader}}" alt="" width="100%"/>
+  </div>
+  <div class="col-xs-12 col-xs-offset-1">
+    <div class="">
+      {{#each getVideoLinks as |link|}}
+      <video src="{{link}}" controls style="width:320px;height:180px;"></video>
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-xs-12 col-xs-offset-1">
+    <div class="">
+      {{#each getImageLinks as |link|}}
+      <img src="{{link}}" style="width:320px;height:180px;" alt="" />
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-xs-3">
+  <div class="well">
+    <p>
+    {{{game.gameDescription}}}
+    </p>
+  </div>
+</div>
+
+<div class="row">
+
+</div>

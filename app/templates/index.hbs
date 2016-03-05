@@ -1,5 +1,11 @@
 {{outlet}}
 
-{{#each model as |game|}}
+<div class="container">
+  <div class="row" style="text-align:center;">
+    <h1>Featured</h1>
+  </div>
+</div>
+
+{{#each model.featured as |game|}}
   {{game-tile-small game=game}}
 {{/each}}

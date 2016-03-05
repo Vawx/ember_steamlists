@@ -3,6 +3,15 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+##Objectives
+###Your code will be reviewed for the following objectives:
+
+1. The application uses at least two computed properties.
+2. A service has been implemented successfully.
+3. At least one custom helper is being used to format data.
+4. The application works as expected.
+5. Previous standards have been met.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -50,4 +59,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

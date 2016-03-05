@@ -1,13 +1,20 @@
 {{yield}}
 
 <div class="col-xs-4">
-  <h1>{{#link-to 'game' game.id}}{{game.name}}{{/link-to}}</h1><span class="label label-default">{{game.id}}</span>
+  {{log game.gameURL}}
+  <a href="http://store.steampowered.com/app/{{game.gameID}}" target="_blank"><h1>{{game.gameName}}</h1></a><span class="label label-default">{{game.gameID}}</span>
   <div class="well">
     <div class="container">
-      <span class="label label-info">{{game.developer}}</span>
+      <a href="http://store.steampowered.com/app/{{game.gameID}}" target="_blank"><img src="{{game.gameImage}}" alt="" /></a>
     </div>
     <div class="container">
-      <span class="label label-info">{{game.rating}}</span>
+      <span class="label label-danger">${{game.gameOriginalCost}}</span>
+    </div>
+    <div class="container">
+      <span class="label label-success">${{game.gameCost}}</span>
+    </div>
+    <div class="container">
+      <span class="label label-info">-{{game.gameDiscount}}%</span>
     </div>
   </div>
 </div>
